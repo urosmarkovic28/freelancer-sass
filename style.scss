@@ -1,3 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+$gray: #303633;
+$lightGray: #f2f2f2;
+$green:#8bebcd;
+$pink: #9c7a97;
+$headings: 'Source Sans Pro', sans-serif;
+$text: 'Lato', sans-serif;
+$transition: .3s ease;
+$font: 16px;
+$white: #fff;
+/*******************************************
+BASIC
+*******************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: red;
+    font-family: $text;
+    font-size: $font;
+    color: $gray;
+    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $headings;
+}
+/*******************************************
+ASIDE
+*******************************************/
+aside{
+    flex: 1;
+    background-image: linear-gradient(rgba($gray, .8),rgba($pink,.8)), url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 60px;
+    img{
+        width: 40%;
+        border-radius: 50%;
+        border: 5px solid $pink;
+        background-position: center;
+    }
+    h1{
+        font-weight: 300;
+        color: $white;
+        padding: 30px 0;
+        span{
+            color: $green;
+            font-weight: 700;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+    }
+    a {
+        color: $green;
+        margin-left: 20px;
+        font-size: 2rem;
+        &:hover{
+            color: $white;
+            transition: $transition;
+        }
+    }
+   
+}
+/*******************************************
+MAIN
+*******************************************/
+.main{
+    flex: 2;
+   
 }
