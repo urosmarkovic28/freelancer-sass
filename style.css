@@ -110,11 +110,14 @@ MAIN
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  overflow: scroll;
+  height: 100vh;
   padding: 40px;
 }
 
 .main .about button {
-  border: 2px solid #8bebcd;
+  border: 3px solid #8bebcd;
+  font-weight: 700;
   padding: 10px 40px;
   font-size: 1rem;
   border-radius: 8px;
@@ -125,7 +128,7 @@ MAIN
 }
 
 .main .about button:hover {
-  border: 2px solid #9c7a97;
+  border: 3px solid #9c7a97;
   color: #9c7a97;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -136,7 +139,75 @@ MAIN
   content: "";
   height: 2px;
   width: 100%;
-  background: #f2f2f2;
+  background: lightgray;
+  margin: 35px 0;
+}
+
+.main .portfolio .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main .portfolio .row .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.main .portfolio .row .col img {
+  width: 100%;
+}
+
+.main .portfolio .row .col img:hover {
+  opacity: .8;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .portfolio .row .col h4 {
+  font-size: 1.7rem;
+  color: #9c7a97;
+  padding: 20px 0;
+}
+
+.main .portfolio .row .col p {
+  padding-bottom: 30px;
+}
+
+.main .portfolio button {
+  border: 3px solid #8bebcd;
+  font-weight: 700;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  color: #8bebcd;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.main .portfolio button:hover {
+  border: 3px solid #9c7a97;
+  color: #9c7a97;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .portfolio::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: lightgray;
   margin: 35px 0;
 }
 /*# sourceMappingURL=style.css.map */
