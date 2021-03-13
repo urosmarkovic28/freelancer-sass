@@ -33,6 +33,12 @@ h2 {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+}
+
 h2::after {
   display: block;
   content: "";
@@ -73,6 +79,20 @@ aside {
           align-items: flex-end;
   text-align: right;
   padding-right: 60px;
+}
+
+@media (max-width: 768px) {
+  aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 0;
+    text-align: center;
+    height: 80vh;
+  }
 }
 
 aside img {
@@ -119,6 +139,15 @@ MAIN
   padding: 40px;
 }
 
+@media (max-width: 768px) {
+  .main {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    height: auto;
+  }
+}
+
 .main .about button {
   border: 3px solid #8bebcd;
   font-weight: 700;
@@ -163,6 +192,14 @@ MAIN
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 768px) {
+  .main .portfolio .row .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .main .portfolio .row .col img {
@@ -226,6 +263,8 @@ MAIN
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -241,6 +280,14 @@ MAIN
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .main footer .row form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .main footer .row form input {
@@ -296,6 +343,15 @@ MAIN
   -webkit-box-flex: 0;
       -ms-flex: 0 0 28%;
           flex: 0 0 28%;
+}
+
+@media (max-width: 768px) {
+  .main footer .row .contact {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 50px;
+  }
 }
 
 .main footer .row .contact li {

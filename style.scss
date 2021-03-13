@@ -57,6 +57,9 @@ h1,h2,h3,h4,h5,h6{
 h2{
     font-size: 2.5rem;
     font-weight: 700;
+    @media (max-width: 768px){
+        text-align: center;
+    }
     &::after{
         display: block;
         content: "";
@@ -84,6 +87,13 @@ aside{
     align-items: flex-end;
     text-align: right;
     padding-right: 60px;
+    @media (max-width: 768px){
+        flex: 0 0 100%;
+        align-items: center;
+        padding-right: 0;
+        text-align: center;
+        height: 80vh;
+    }
     img{
         width: 50%;
         border-radius: 50%;
@@ -120,6 +130,10 @@ MAIN
     overflow: scroll;
     height: 100vh;
     padding: 40px;
+    @media (max-width: 768px){
+        flex: 0 0 100%;
+        height: auto;
+    }
     .about{
 
         button{
@@ -137,6 +151,9 @@ MAIN
             margin-top: 40px;
             .col{
                 flex: 0 0 48%;
+                @media (max-width: 768px){
+                    flex: 0 0 100%;
+                }
                 img{
                     width: 100%;
                     &:hover{
@@ -167,6 +184,7 @@ MAIN
         .row{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-top: 40px;
             form{
 
@@ -174,6 +192,9 @@ MAIN
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                @media  (max-width: 768px){
+                    flex: 0 0 100%;
+                }
                 input{
                     flex: 0 0 48%;
                     padding: 10px;
@@ -202,6 +223,10 @@ MAIN
             }
             .contact{
                 flex: 0 0 28%;
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                    margin-top: 50px;
+                }
                 li{
                     line-height: 2.5;
                     font-size: 1rem;
