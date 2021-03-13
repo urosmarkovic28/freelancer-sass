@@ -42,6 +42,10 @@ h2::after {
   margin: 20px 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /*******************************************
 ASIDE
 *******************************************/
@@ -209,5 +213,97 @@ MAIN
   width: 100%;
   background: lightgray;
   margin: 35px 0;
+}
+
+.main footer {
+  padding-bottom: 50px;
+}
+
+.main footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main footer .row form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 68%;
+          flex: 0 0 68%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main footer .row form input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 10px;
+  background: #f2f2f2;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.main footer .row form textarea {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding: 10px;
+  background: #f2f2f2;
+  border: none;
+}
+
+.main footer .row form button {
+  border: 3px solid #8bebcd;
+  font-weight: 700;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  color: #8bebcd;
+  cursor: pointer;
+  margin-top: 30px;
+  background-color: #9c7a97;
+  border: 2px solid #9c7a97;
+  color: #fff;
+}
+
+.main footer .row form button:hover {
+  border: 3px solid #9c7a97;
+  color: #9c7a97;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main footer .row form button:hover {
+  background-color: #8bebcd;
+  border: 2px solid #8bebcd;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.main footer .row .contact {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28%;
+          flex: 0 0 28%;
+}
+
+.main footer .row .contact li {
+  line-height: 2.5;
+  font-size: 1rem;
+}
+
+.main footer .row .contact li i {
+  color: #9c7a97;
 }
 /*# sourceMappingURL=style.css.map */
